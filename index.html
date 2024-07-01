@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - July/August 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tasks - July/August 2024</h1>
+    </header>
+    <main>
+        <section>
+            <label for="week-select">Select a week:</label>
+            <select id="week-select" onchange="displayTasks()">
+                <option value="July 1 - July 7">Week 1 (July 1 - July 7)</option>
+                <option value="July 8 - July 14">Week 2 (July 8 - July 14)</option>
+                <option value="July 15 - July 21">Week 3 (July 15 - July 21)</option>
+                <option value="July 22 - July 28">Week 4 (July 22 - July 28)</option>
+                <option value="July 29 - August 4">Week 5 (July 29 - August 4)</option>
+                <option value="August 5 - August 10">Week 6 (August 5 - August 10)</option>
+            </select>
+        </section>
+        <section>
+            <label for="name-select">Choose your name:</label>
+            <select id="name-select">
+                <option value="Muzammil">Muzammil</option>
+                <option value="Nikhil">Nikhil</option>
+                <option value="Peter">Peter</option>
+                <option value="Rohan">Rohan</option>
+                <option value="Sneha">Sneha</option>
+                <option value="Yashu">Yashu</option>
+            </select>
+        </section>
+        <button onclick="displayTasks()">Check the box beside your task once the task is completed</button>
+        <section id="task-display">
+            <h2>Your Task for the Selected Week:</h2>
+        </section>
+        <section id="completion-status">
+            <h2>Task Completion Status</h2>
+            <ul id="status-list">
+                <!-- Completion status will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p id="feedback-message"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
